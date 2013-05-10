@@ -62,4 +62,4 @@ To enable the plugin, override the default list by adding the following (notice 
 		</description>
 	</property>
     
-Unless you're overriding the storage field, it is important to include `element-selector` *before* `index-(basic|anchor)`!
+Unless you're overriding the storage field, it is important to include `element-selector` _before_ `index-(basic|anchor)`!
