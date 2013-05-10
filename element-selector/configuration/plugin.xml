@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin
+   id="element-selector"
+   name="Blacklist and Whitelist Parser and Indexer"
+   version="1.0.0"
+   provider-name="kaqqao">
+
+   <runtime>
+      <library name="element-selector.jar">
+         <export name="*"/>
+      </library>
+   </runtime>
+
+   <extension id="kaqqao.nutch.selector.HtmlElementSelectorIndexer"
+              name="Nutch Blacklist and Whitelist Indexing Filter"
+              point="org.apache.nutch.indexer.IndexingFilter">
+      <implementation id="HtmlElementSelectorIndexer"
+                      class="kaqqao.nutch.selector.HtmlElementSelectorIndexer"/>
+   </extension>
+
+	<extension id="kaqqao.nutch.selector.HtmlElementSelectorFilter"
+              name="Nutch Blacklist and Whitelist Parsing Filter"
+              point="org.apache.nutch.parse.ParseFilter">
+      <implementation id="HtmlElementSelectorFilter"
+                      class="kaqqao.nutch.selector.HtmlElementSelectorFilter"/>
+   </extension>
+
+</plugin>
