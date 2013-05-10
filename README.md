@@ -2,7 +2,7 @@ nutch-element-selector
 ======================
 
 Nutch 2.1 plugin for whitelisting/blacklisting specific HTML elements.
-Based on Nutch 1.x plugin called index-blacklist-whitelist (full credit to the original author).
+Based on Nutch 1.x plugin called index-blacklist-whitelist by Elisabeth Adler (full credit to the original author).
 
 Usage
 ======================
