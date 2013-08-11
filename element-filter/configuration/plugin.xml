@@ -16,14 +16,14 @@
               name="Nutch Blacklist and Whitelist Indexing Filter"
               point="org.apache.nutch.indexer.IndexingFilter">
       <implementation id="HtmlElementSelectorIndexer"
-                      class="kaqqao.nutch.selector.HtmlElementSelectorIndexer"/>
+                      class="kaqqao.nutch.plugin.selector.HtmlElementSelectorIndexer"/>
    </extension>
 
 	<extension id="kaqqao.nutch.selector.HtmlElementSelectorFilter"
               name="Nutch Blacklist and Whitelist Parsing Filter"
               point="org.apache.nutch.parse.ParseFilter">
       <implementation id="HtmlElementSelectorFilter"
-                      class="kaqqao.nutch.selector.HtmlElementSelectorFilter"/>
+                      class="kaqqao.nutch.plugin.selector.HtmlElementSelectorFilter"/>
    </extension>
 
 </plugin>

@@ -8,7 +8,7 @@
     <packaging>jar</packaging>
 
     <name>element-selector</name>
-    <url>https://github.com/veggen/nutch-element-selector</url>
+    <url>http://maven.apache.org</url>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
