@@ -23,7 +23,7 @@ public class HtmlElementSelectorIndexer implements IndexingFilter {
         if (storageField != null) {
             CharsetDecoder decoder = Charset.forName("UTF-8").newDecoder();
             try {
-                String strippedContent = decoder.decode(webPage.getFromMetadata(new Utf8(storageField))).toString();
+                String strippedContent = decoder.decode(webPage.getMetadata().get(new Utf8(storageField))).toString();
                 if (strippedContent != null) {
                     document.add(storageField, strippedContent);
                 }

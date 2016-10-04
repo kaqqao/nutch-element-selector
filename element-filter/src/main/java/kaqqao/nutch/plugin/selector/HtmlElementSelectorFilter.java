@@ -53,7 +53,7 @@ public class HtmlElementSelectorFilter implements ParseFilter {
         } else {
             CharsetEncoder encoder = Charset.forName("UTF-8").newEncoder();
             try {
-                webPage.putToMetadata(new Utf8(storageField), encoder.encode(CharBuffer.wrap(strippedContent.toString())));
+                webPage.getMetadata().put(new Utf8(storageField), encoder.encode(CharBuffer.wrap(strippedContent.toString())));
             } catch (CharacterCodingException e) {
                 e.printStackTrace();
             }
