@@ -1,3 +1,5 @@
+**WARNING:** This project is no longer actively maintained. I might restart it in the future, but no hard promises. If you're interested in taking it over, contact me.
+
 nutch-element-selector
 ======================
 
